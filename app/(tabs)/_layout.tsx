@@ -29,6 +29,15 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="medication"
+        options={{
+          title: 'กินยา',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons name={focused ? 'medkit' : 'medkit-outline'} size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="two"
         options={{
           title: 'ตั้งค่า',
